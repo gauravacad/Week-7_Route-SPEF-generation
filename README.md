@@ -858,8 +858,6 @@ cd OpenROAD-flow-scripts/flow/results/sky130hd/vsdbabysoc/base
 make DESIGN_CONFIG=./designs/sky130hd/vsdbabysoc/config.mk spef
 ```
 
-![Spef](Images/final_step_spef_fileview.png)
-![Final.v file](Images/final_step_v_file.png)
 #### 📊 SPEF File Structure
 
 A typical SPEF file contains:
