@@ -798,7 +798,53 @@ if { $rcx_rules_file != "" } {
   estimate_parasitics -global_routing
 }
 ```
+# Final Result Summary
 
+# CTS Metrics Summary
+
+| Metric                 | Value    | Status     |
+|------------------------|----------|------------|
+| TNS (Total Negative Slack) | 0.00 ns | ✅ MET     |
+| WNS (Worst Negative Slack) | 0.00 ns | ✅ MET     |
+| Worst Slack            | 5.55 ns  | ✅ MET     |
+| Clock Skew             | 0.65 ns  | ✅ Good    |
+| Setup Violations       | 0        | ✅ Clean   |
+| Hold Violations        | 0        | ✅ Clean   |
+| Max Cap Violations     | 2        | ⚠️ Minor   |
+
+
+#### 🔍 Detailed Timing Analysis
+
+##### ⏱️ Setup Timing (Max Path)
+
+| Parameter | Value |
+|-----------|-------|
+| **Startpoint** | `core.CPU_valid_taken_br_a5$_DFF_P_` |
+| **Endpoint** | `core.CPU_Xreg_value_a4[7][13]$_SDFFE_PP0P_` |
+| **Data Arrival Time** | 5.79 ns |
+| **Data Required Time** | 11.34 ns |
+| **Slack** | **5.55 ns** ✅ |
+
+##### ⏱️ Hold Timing (Min Path)
+
+| Parameter | Value |
+|-----------|-------|
+| **Startpoint** | `core.CPU_Xreg_value_a4[25][15]$_SDFFE_PP0P_` |
+| **Endpoint** | `core.CPU_src2_value_a3[15]$_DFF_P_` |
+| **Data Arrival Time** | 1.74 ns |
+| **Data Required Time** | 1.74 ns |
+| **Slack** | **0.00 ns** ✅ |
+
+#### ⚡ Power Analysis
+
+| Component | Internal Power | Switching Power | Leakage Power | Total Power | % |
+|-----------|---------------|-----------------|---------------|-------------|---|
+| **Sequential** | 6.95 mW | 0.97 mW | 14.5 pW | 7.92 mW | 37.7% |
+| **Combinational** | 2.12 mW | 4.52 mW | 30.5 pW | 6.64 mW | 31.6% |
+| **Clock** | 3.66 mW | 2.76 mW | 2.96 pW | 6.42 mW | 30.6% |
+| **Total** | **12.7 mW** | **8.25 mW** | **48.0 pW** | **21.0 mW** | 100% |
+
+---
 
 ---
 
