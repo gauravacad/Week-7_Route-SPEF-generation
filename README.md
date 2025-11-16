@@ -8,7 +8,7 @@ This task was all about connecting the dots—seeing how the digital logic we wr
 
 Up to this point, many steps like synthesis, STA, and layout were separate exercises. The goal of this task was to integrate them into one continuous flow, just like in a real-world ASIC design process.
 
-<img width="811" height="238" alt="image" src="https://github.com/user-attachments/assets/52556cec-93a9-46cb-9e1d-250b67283182" />
+<img width="812" height="231" alt="image" src="https://github.com/user-attachments/assets/b45035c3-fb6d-42ec-bf70-94a89be50b3b" />
 
 
 For that we need to set the following steps 
