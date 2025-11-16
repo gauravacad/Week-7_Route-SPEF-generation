@@ -48,9 +48,6 @@ source ./env.sh
 yosys -help
 openroad -help
 ```
-
-<img width="3790" height="450" alt="directory" src="https://github.com/user-attachments/assets/16f3cf1a-bdc8-4284-b6ea-c208a3f0b880" />
-
 To verify the installation , enter the following code to run the entire automated flow to check if the design works.
 
 ```
@@ -176,7 +173,7 @@ The following is the synthesis log
 <img width="3964" height="2506" alt="synthesis_3" src="https://github.com/user-attachments/assets/0554caa2-6e53-4302-8316-92dac7c2aadc" />
 <img width="3964" height="2506" alt="synthesis_4" src="https://github.com/user-attachments/assets/545f21cf-2a93-4c24-83a8-df8bf775a084" />
 <img width="3964" height="2506" alt="synthesis_5" src="https://github.com/user-attachments/assets/b0da1aea-46f2-48cc-8be7-41af232f4585" />
-<img width="3964" height="754" alt="synthesis_6" src="https://github.com/user-attachments/assets/54e624e1-cdf3-4781-b21e-e948cde9c882" />
+<img width="3964" height="754"  alt="synthesis_6" src="https://github.com/user-attachments/assets/54e624e1-cdf3-4781-b21e-e948cde9c882" />
 
 Now the netlist generated is as follows
 
