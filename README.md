@@ -88,8 +88,30 @@ The flow cleverly separates the **design-specific files** (`src`) from the **pla
         * `sdc/`: The timing constraints for synthesis (`vsdbabysoc_synthesis.sdc`).
         * `macro.cfg` & `pin_order.cfg`: Files to guide the floorplanner.
 
-<img width="1815" height="753" alt="tree" src="https://github.com/user-attachments/assets/232b6095-878f-401a-825a-919f956a01b3" />
+``` bash
+📁 vsdbabysoc
+├── ⚙️ config.mk
+├── 📂 gds
+│   ├── 📐 avsddac.gds
+│   └── 📐 avsdpll.gds
+├── 📂 include
+│   ├── 📄 sandpiper_gen.vh
+│   ├── 📄 sandpiper.vh
+│   ├── 📄 sp_default.vh
+│   └── 📄 sp_verilog.vh
+├── 📂 lef
+│   ├── 📄 avsddac.lef
+│   └── 📄 avsdpll.lef
+├── 📂 lib
+│   ├── 📚 avsddac.lib
+│   └── 📚 avsdpll.lib
+├── 🧩 macro.cfg
+├── 📌 pin_order.cfg
+└── 📂 sdc
+    ├── ⏱️ vsdbabysoc_layout.sdc
+    └── ⏱️ vsdbabysoc_synthesis.sdc
 
+```
 
 ### The Most important File: `config.mk`
 
