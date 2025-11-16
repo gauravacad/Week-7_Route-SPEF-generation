@@ -750,6 +750,15 @@ And the final view of the fully routed chip:
 ```bash
 make DESIGN_CONFIG=./designs/sky130hd/vsdbabysoc/config.mk gui_route
 ```
+
+## placement 
+
+<img width="1367" height="818" alt="image" src="https://github.com/user-attachments/assets/e1783092-891a-48ee-81d8-d988cde46c92" />
+
+
+### Heatmap 
+<img width="895" height="534" alt="image" src="https://github.com/user-attachments/assets/905c3258-367b-4f23-b558-1af9b50c006f" />
+
 ---
 
 ##  Part 4: What is SPEF?
@@ -761,6 +770,9 @@ The final step of the flow, and a key goal of this week, was to generate the **S
 Before routing, our timing analysis (pre-STA) is just an *estimate*. It uses a "Wire Load Model" to guess the resistance (R) and capacitance (C) of the wires that *will* be drawn.
 
 After routing, we have the *actual, physical wires*. The SPEF file contains the **real, extracted parasitic R and C values** for every single net in the design.
+
+<img width="313" height="547" alt="image" src="https://github.com/user-attachments/assets/c5863ff3-f8ca-4bcf-97fc-f8ca0f3c8826" />
+
 
 **In short: SPEF = Ground Truth.**
 
