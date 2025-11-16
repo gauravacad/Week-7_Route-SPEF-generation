@@ -7,17 +7,8 @@ This task was all about connecting the dots—seeing how the digital logic we wr
 ##  The Objective: A Full Physical Design Flow
 
 Up to this point, many steps like synthesis, STA, and layout were separate exercises. The goal of this task was to integrate them into one continuous flow, just like in a real-world ASIC design process.
-graph LR
-    A[RTL Verilog] --> B[Yosys Synthesis]
-    B --> C[OpenROAD PnR]
-    C --> D[GDSII Layout]
-    
-    E[Sky130 PDK] --> B
-    E --> C
-    
-    style A fill:#e1f5ff
-    style D fill:#c8e6c9
-    style E fill:#fff9c4
+
+<img width="811" height="238" alt="image" src="https://github.com/user-attachments/assets/52556cec-93a9-46cb-9e1d-250b67283182" />
 
 
 For that we need to set the following steps 
