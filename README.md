@@ -170,14 +170,6 @@ This step runs Yosys to turn the Verilog into a gate-level netlist.
 make DESIGN_CONFIG=./designs/sky130hd/vsdbabysoc/config.mk synth
 ```
 The following is the synthesis log
-
-<img width="3964" height="2506" alt="synthesis_1" src="https://github.com/user-attachments/assets/427da15f-b2f5-4e9c-97dc-d8d3b09f897f" />
-<img width="3964" height="2506" alt="synthesis_2" src="https://github.com/user-attachments/assets/4976dff9-1a8c-44af-a000-ed14f8f54e9c" />
-<img width="3964" height="2506" alt="synthesis_3" src="https://github.com/user-attachments/assets/0554caa2-6e53-4302-8316-92dac7c2aadc" />
-<img width="3964" height="2506" alt="synthesis_4" src="https://github.com/user-attachments/assets/545f21cf-2a93-4c24-83a8-df8bf775a084" />
-<img width="3964" height="2506" alt="synthesis_5" src="https://github.com/user-attachments/assets/b0da1aea-46f2-48cc-8be7-41af232f4585" />
-<img width="3964" height="754"  alt="synthesis_6" src="https://github.com/user-attachments/assets/54e624e1-cdf3-4781-b21e-e948cde9c882" />
-
 Now the netlist generated is as follows
 
 <img width="3978" height="2560" alt="netlist" src="https://github.com/user-attachments/assets/f6a260db-e360-43f5-8086-bcd3a4b3cb01" />
@@ -758,10 +750,6 @@ And the final view of the fully routed chip:
 ```bash
 make DESIGN_CONFIG=./designs/sky130hd/vsdbabysoc/config.mk gui_route
 ```
-- After this i have faced a congestion error , basically after routing or during the place left for routing isnt enough or very less so that the routes , or tracks are too close each other causing DRC violations. 
-
-<img width="1438" height="231" alt="route_Error" src="https://github.com/user-attachments/assets/a559dea6-7149-4b4d-849f-39846827bb4a" />
-
 ---
 
 ##  Part 4: What is SPEF?
