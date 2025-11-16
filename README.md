@@ -61,9 +61,10 @@ cd flow
 make
 ```
 
-<img width="3986" height="2302" alt="make_openroad_flow_scripts" src="https://github.com/user-attachments/assets/f43f6aff-a4ca-469b-a8c8-5608215c79b8" />
+<img width="1581" height="853" alt="image" src="https://github.com/user-attachments/assets/97d83997-ceb3-4484-88a5-377d84718e6c" />
 
-<img width="3975" height="2499" alt="gui_final" src="https://github.com/user-attachments/assets/70e9f7fc-168a-4f2c-8219-d974b4cbed6b" />
+
+<img width="3975" height="2499" alt="image" src="https://github.com/user-attachments/assets/70e9f7fc-168a-4f2c-8219-d974b4cbed6b" />
 
 
 ---
