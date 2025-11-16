@@ -7,8 +7,20 @@ This task was all about connecting the dots—seeing how the digital logic we wr
 ##  The Objective: A Full Physical Design Flow
 
 Up to this point, many steps like synthesis, STA, and layout were separate exercises. The goal of this task was to integrate them into one continuous flow, just like in a real-world ASIC design process.
+graph LR
+    A[RTL Verilog] --> B[Yosys Synthesis]
+    B --> C[OpenROAD PnR]
+    C --> D[GDSII Layout]
+    
+    E[Sky130 PDK] --> B
+    E --> C
+    
+    style A fill:#e1f5ff
+    style D fill:#c8e6c9
+    style E fill:#fff9c4
 
-My mission was to:
+
+For that we need to set the following steps 
 1.  **Set up the Environment:** Install and configure the OpenROAD-flow-scripts.
 2.  **Configure the Project:** Teach the flow about our `BabySoC` design, its Verilog files, and its special macros (like the PLL and DAC).
 3.  **Run the Flow:** Execute all the main physical design stages:
